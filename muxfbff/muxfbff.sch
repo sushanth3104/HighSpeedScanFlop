@@ -31,9 +31,9 @@ N 80 -300 160 -300 {lab=TE}
 N 80 -260 160 -260 {lab=TEN}
 N 80 -220 160 -220 {lab=C}
 N 80 -180 160 -180 {lab=CN}
-C {/home/sushanth/projects/mux/Mux.sym} 340 -250 0 0 {name=x1}
-C {/home/sushanth/projects/masterLatch/masterlatch.sym} 570 -280 0 0 {name=x2}
-C {/home/sushanth/projects/slaveLatch/SlaveLatch.sym} 830 -290 0 0 {name=x3}
+C {/home/sushanth/Desktop/HighSpeedScanFlop/mux/Mux.sym} 340 -250 0 0 {name=x1}
+C {/home/sushanth/Desktop/HighSpeedScanFlop/masterLatch/masterlatch.sym} 570 -280 0 0 {name=x2}
+C {/home/sushanth/Desktop/HighSpeedScanFlop/slaveLatch/SlaveLatch.sym} 830 -290 0 0 {name=x3}
 C {iopin.sym} 160 -460 0 0 {name=p1 lab=VPWR}
 C {iopin.sym} 160 -420 0 0 {name=p2 lab=VGND}
 C {ipin.sym} 80 -380 0 0 {name=p3 lab=DIN}

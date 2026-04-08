@@ -86,12 +86,12 @@ C {lab_pin.sym} 350 -520 0 0 {name=p4 sig_type=std_logic lab=TE}
 C {lab_pin.sym} 390 -500 0 0 {name=p5 sig_type=std_logic lab=TEN}
 C {lab_pin.sym} 440 -480 0 0 {name=p6 sig_type=std_logic lab=C}
 C {lab_pin.sym} 490 -460 0 0 {name=p7 sig_type=std_logic lab=CN}
-C {/home/sushanth/projects/inverter/inv.sym} 1080 -600 0 0 {name=x2}
+C {/home/sushanth/Desktop/HighSpeedScanFlop/inverter/inv.sym} 1080 -600 0 0 {name=x2}
 C {vdd.sym} 1170 -780 0 0 {name=l11 lab=VDD}
 C {gnd.sym} 1170 -580 0 0 {name=l12 lab=0}
 C {opin.sym} 1340 -680 0 0 {name=p8 lab=Q1}
-C {/home/sushanth/projects/inverter/inv.sym} 1080 -290 0 0 {name=x3}
+C {/home/sushanth/Desktop/HighSpeedScanFlop/inverter/inv.sym} 1080 -290 0 0 {name=x3}
 C {vdd.sym} 1170 -470 0 0 {name=l13 lab=VDD}
 C {gnd.sym} 1170 -270 0 0 {name=l14 lab=0}
 C {opin.sym} 1340 -370 0 0 {name=p9 lab=Q2}
-C {/home/sushanth/projects/muxfbff/muxfbff.sym} 510 -350 0 0 {name=x1}
+C {/home/sushanth/Desktop/HighSpeedScanFlop/muxfbff/muxfbff.sym} 510 -350 0 0 {name=x1}

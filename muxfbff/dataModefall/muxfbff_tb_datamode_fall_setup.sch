@@ -76,7 +76,7 @@ echo "td,delay" > /home/sushanth/Desktop/HighSpeedScanFlop/muxfbff/dataModefall/
 let td = 0.6n
 let step = 1p
 
-while td <= 1.4n
+while td <= 1.7n
 
   alterparam td = $&td
   let tdval = td
@@ -105,12 +105,12 @@ C {lab_pin.sym} 410 -510 0 0 {name=p4 sig_type=std_logic lab=TE}
 C {lab_pin.sym} 450 -490 0 0 {name=p5 sig_type=std_logic lab=TEN}
 C {lab_pin.sym} 500 -470 0 0 {name=p6 sig_type=std_logic lab=C}
 C {lab_pin.sym} 550 -450 0 0 {name=p7 sig_type=std_logic lab=CN}
-C {/home/sushanth/projects/inverter/inv.sym} 1140 -590 0 0 {name=x2}
+C {/home/sushanth/Desktop/HighSpeedScanFlop/inverter/inv.sym} 1140 -590 0 0 {name=x2}
 C {vdd.sym} 1230 -770 0 0 {name=l11 lab=VDD}
 C {gnd.sym} 1230 -570 0 0 {name=l12 lab=0}
 C {opin.sym} 1400 -670 0 0 {name=p8 lab=Q1}
-C {/home/sushanth/projects/inverter/inv.sym} 1140 -280 0 0 {name=x3}
+C {/home/sushanth/Desktop/HighSpeedScanFlop/inverter/inv.sym} 1140 -280 0 0 {name=x3}
 C {vdd.sym} 1230 -460 0 0 {name=l13 lab=VDD}
 C {gnd.sym} 1230 -260 0 0 {name=l14 lab=0}
 C {opin.sym} 1400 -360 0 0 {name=p9 lab=Q2}
-C {/home/sushanth/projects/muxfbff/muxfbff.sym} 570 -340 0 0 {name=x1}
+C {/home/sushanth/Desktop/HighSpeedScanFlop/muxfbff/muxfbff.sym} 570 -340 0 0 {name=x1}
