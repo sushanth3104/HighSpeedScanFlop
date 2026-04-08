@@ -70,31 +70,31 @@ C {code.sym} 480 -800 0 0 {name=simulation only_toplevel=false value="
 .param td = 0n
 
 .control
-  save all
-  set filetype=ascii
-  shell rm -f /home/sushanth/Desktop/HighSpeedScanFlop/muxfbff/dataModefall/delay.txt
 
-  echo "td,delay" > /home/sushanth/Desktop/HighSpeedScanFlop/muxfbff/dataModefall/delay.txt
+echo "td,delay" > /home/sushanth/Desktop/HighSpeedScanFlop/muxfbff/dataModefall/delay.txt
 
-  let td = 0.33n
-  let step = 1p
+let td = 0.6n
+let step = 1p
 
-  while td <= 1.21n
+while td <= 1.4n
 
-    alterparam td = $&td
-    let tdval = td     ; <-- KEY FIX
+  alterparam td = $&td
+  let tdval = td
 
-    reset
-    run
+  reset
+  destroy all
 
-    meas tran delay TRIG v(C) VAL=0.9 RISE=2 TARG v(Q) VAL=0.9 FALL=1
+  run
 
-    print tdval,delay > /home/sushanth/Desktop/HighSpeedScanFlop/muxfbff/dataModefall/delay.txt
+  meas tran delay TRIG v(C) VAL=0.9 RISE=2 TARG v(Q) VAL=0.9 FALL=1
 
-
-    let td = td + step
-
+  if $&delay > 0
+    echo "$&tdval,$&delay" >> /home/sushanth/Desktop/HighSpeedScanFlop/muxfbff/dataModefall/delay.txt
   end
+
+  let td = td + step
+
+end
 
 .endc
 

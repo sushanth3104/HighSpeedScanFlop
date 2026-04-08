@@ -1,5 +1,5 @@
-** sch_path: /home/sushanth/projects/muxfbff/datamodefall/muxfbff_tb_datamode_fall.sch
-Transient Analysis  Tue Apr  7 23:13:45  2026
+** sch_path: /home/sushanth/desktop/highspeedscanflop/muxfbff/datamodefall/muxfbff_tb_datamode_fall.sch
+Transient Analysis  Wed Apr  8 23:31:19  2026
 --------------------------------------------------------------------------------
 Index   time            v(c)            v(din)          v(q)            
 --------------------------------------------------------------------------------
