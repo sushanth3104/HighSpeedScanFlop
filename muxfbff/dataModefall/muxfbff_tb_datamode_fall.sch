@@ -36,7 +36,7 @@ N 1170 -300 1170 -270 {lab=0}
 N 1310 -370 1340 -370 {lab=Q2}
 N 990 -510 990 -370 {lab=Q}
 N 990 -370 1110 -370 {lab=Q}
-C {vsource.sym} 40 -510 0 0 {name=V1 value="pulse(0 1.8 0 50p 50p 9n 36n)" savecurrent=false}
+C {vsource.sym} 40 -510 0 0 {name=V1 value="pulse(0 1.8 0.6n 50p 50p 9n 36n)" savecurrent=false}
 C {gnd.sym} 40 -440 0 0 {name=l1 lab=0}
 C {vsource.sym} 90 -440 0 0 {name=V2 value=0 savecurrent=false}
 C {gnd.sym} 90 -370 0 0 {name=l2 lab=0}
@@ -72,7 +72,8 @@ C {code.sym} 420 -810 0 0 {name=simulation only_toplevel=false value="
   shell rm -f /home/sushanth/Desktop/HighSpeedScanFlop/muxfbff/dataModefall/outputsim.txt
 
     run
-	meas tran delay TRIG v(C) VAL=0.9 RISE=2 TARG v(Q) VAL=0.9 FALL=1
+	meas tran cq_delay TRIG v(C) VAL=0.9 RISE=2 TARG v(Q) VAL=0.9 FALL=1
+	meas tran dc_delay TRIG v(din) VAL=0.9 FALL=1 TARG v(C) VAL=0.9 RISE=2
 	print v(c),v(din),v(q) > /home/sushanth/Desktop/HighSpeedScanFlop/muxfbff/dataModefall/outputsim.txt
   end
 .endc
